@@ -1,0 +1,6 @@
+[submodule "dbms/reveal.js"]
+	path = dbms/reveal.js
+	url = git@github.com:hakimel/reveal.js.git
+[submodule "security/reveal.js"]
+	path = rdbms_security/reveal.js
+	url = git@github.com:hakimel/reveal.js.git
