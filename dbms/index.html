@@ -28,11 +28,15 @@
           <p>Open Source (Relational) Database Management System<br> By Ido Kanner</p>
         </section>
         <section>
-          <h2>
             <h1>About Me</h1>
             <p>(Open Source) Software developer in the IT industry</p>
-          </section>
-          <section>
+        </section>
+        <section>
+          <h2>Small Question</h2>
+          <p>What is the most pupolar RDBMS in the world?</p>
+          <p><small>Hint: It's open sourced RDBMS</small></p>
+        </section>
+        <section>
             <section>
               <h2>A Short History of Relational Databases</h2>
               <blockquote>
@@ -230,10 +234,11 @@ int main() {
         <p>5 minutes break?</p>
       </section>
       <section>
+        <section>
           <h1>RDBMS Types</h1>
         </section>
         <section>
-          <p>There are 3 RDBMS types in the world</p>
+          <p>There are three RDBMS types in the world</p>
         </section>
         <section>
           <ol>
@@ -248,21 +253,20 @@ int main() {
         <section>
           <ul>
             <li>Part of an application</li>
-            <li class="fragment">Have small footprint, and fast actions*</li>
-            <li class="fragment">Provide simple means to work with the data (Simple SQL Dialect)*</li>
-            <li class="fragment">Have limited data storage*</li>
+            <li class="fragment">Have small footprint, and fast actions</li>
+            <li class="fragment">Provide simple means to work with the data (Simple SQL Dialect)</li>
+            <li class="fragment">Have limited data storage</li>
             <li class="fragment">In memory and/or disk storage.</li>
           </ul>
-          <p class="fragment">* Most of the implementations</p>
         </section>
         <section>
           <h2>"Desktop"</h2>
         </section>
         <section>
           <ul>
-            <li>Can be used by several applications, but limited to a single process at a time.</li>
+            <li>Can be used by several applications, but limited to a single access at a time.</li>
             <li class="fragment">Stored inside of the application(s) partition.</li>
-            <li class="fragment">Have query language (SQL dialect most of the times).</li>
+            <li class="fragment">Have query language (SQL dialect).</li>
             <li class="fragment">Manages resources for both reading and writing records.</li>
             <li class="fragment">Disk storage.</li>
             <li class="fragment">A bigger resource footprint then "Embedded".</li>
@@ -273,22 +277,112 @@ int main() {
         </section>
         <section>
           <ul>
-            <li></li>
-            <li class="fragment"></li>
-            <li class="fragment"></li>
-            <li class="fragment"></li>
-            <li class="fragment"></li>
-            <li class="fragment"></li>
-            <li class="fragment"></li>
-            <li class="fragment"></li>
-            <li class="fragment"></li>
-            <li class="fragment"></li>
-            <li class="fragment"></li>
+            <li>Client Server based</li>
+            <li class="fragment">Can have more then a single connection/usage</li>
+            <li class="fragment">Have a query language (SQL dialect)</li>
+            <li class="fragment">Some contain socket for events</li>
+            <li class="fragment">Some contain replication support</li>
+            <li class="fragment">Some contain robost setting mechnisem for tweaking performance</li>
           </ul>
         </section>
       </section>
+      <section>
+        <section>
+          <h1>Open Source RDBMS</h1>
+        </section>
+        <section>
+          <p>Before we start, let's talk about the pink elephant in the room</p>
+          <p class="fragment">
+            <img src="img/pink_elephants.JPG" alt="pink elephants" />
+            <br>
+            <small><a href="https://en.wikipedia.org/wiki/File:Pink_elephants.JPG">Pink Elephants by Bertie Crewe</a></small>
+          </p>
+        </section>
+        <section>
+          <h2>Who develop them anyway?</h2>
+        </section>
+        <section>
+          <p>Companies and non profit organisations</p>
+        </section>
+        <section>
+          <h2>Why?!</h2>
+        </section>
+        <section>
+          <p>The money for companies is not driven from the products.</p>
+          <p>It's for services, extra development, and more.</p>
+        </section>
+        <section>
+          <p>Non profit organisations receives their money from users, and from donations.</p>
+        </section>
+        <section>
+          <h2>What are the most known Open Source RDBMS?</h2>
+        </section>
+        <section>
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Embedded</th>
+                <th>Desktop</th>
+                <th>Server</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="fragment">
+                <td>SQLite</td>
+                <td>✓ </td>
+                <td>✗</td>
+                <td>✗</td>
+              </tr>
+              <tr class="fragment">
+                <td>Apache Derby</td>
+                <td>✓ </td>
+                <td>✗</td>
+                <td>✓ </td>
+              </tr>
+              <tr class="fragment">
+                <td>H2</td>
+                <td>✓ </td>
+                <td>✗</td>
+                <td>✓ </td>
+              </tr>
+              <tr class="fragment">
+                <td>HSQLDB</td>
+                <td>✓ </td>
+                <td>✗</td>
+                <td>✓ </td>
+              </tr>
+              <tr class="fragment">
+                <td>MySQL/MariaDB</td>
+                <td>✓ </td>
+                <td>✗</td>
+                <td>✓ </td>
+              </tr>
+              <tr class="fragment">
+                <td>FirebirdSQL</td>
+                <td>✓ </td>
+                <td>✗</td>
+                <td>✓ </td>
+              </tr>
+
+              <tr class="fragment">
+                <td>PostgreSQL</td>
+                <td>✗</td>
+                <td>✗</td>
+                <td>✓ </td>
+              </tr>
+              <tr class="fragment">
+                <td>CUBRID</td>
+                <td>✗</td>
+                <td>✗</td>
+                <td>✓ </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </section>
     </div>
-  </html>
+  </div>
 
   <script src="reveal.js/lib/js/head.min.js"></script>
   <script src="reveal.js/js/reveal.js"></script>
