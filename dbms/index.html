@@ -33,7 +33,7 @@
         </section>
         <section>
           <h2>Small Question</h2>
-          <p>What is the most pupolar RDBMS in the world?</p>
+          <p>What is the most popular RDBMS in the world?</p>
           <p><small>Hint: It's open sourced RDBMS</small></p>
         </section>
         <section>
@@ -361,7 +361,7 @@ int main() {
               <tr class="fragment">
                 <td>FirebirdSQL</td>
                 <td>✓ </td>
-                <td>✗</td>
+                <td>✓</td>
                 <td>✓ </td>
               </tr>
               <tr class="fragment">
@@ -386,6 +386,83 @@ int main() {
       <section>
         <section>
           <h2>SQLite</h2>
+        </section>
+        <section>
+          <p>
+            It's the answer to my question: <br/>
+            <q>
+              What is the most popular RDBMS in the world?
+            </q>
+          </p>
+        </section>
+        <section>
+          <p>
+            It's used on all mobile device today (Android and iOS).<br>
+            It's used by Microsoft, Linux distro and MacOSX.<br>
+            Even your web browser uses it internally.<br>
+            <br><a href="https://www.sqlite.org/famous.html">Well-Known Users of SQLite</a>
+          </p>
+        </section>
+        <section>
+          <p>
+            <img src="img/Keye_Luke_Master_Po_Kung_Fu.JPG" alt="Keye Luke Master" ><br>
+            Good, yes, but what is SQLite?<br>
+          </p>
+        </section>
+        <section>
+          <p>Glad you've asked 😜</p>
+        </section>
+        <section>
+          <p>
+            In short:<br>
+            SQlite is a C library for embedded <a href="https://en.wikipedia.org/wiki/ACID">ACID</a>* RDBMS.
+          </p>
+          <p>
+            <small>
+              * <strong >A</strong>tomic, <strong>C</strong>onsistency, <strong>I</strong>solation, <strong>D</strong>urability
+            </small>
+          </p>
+        </section>
+        <section>
+          <p>
+            The database is develop by D. Richard Hipp (working at General Dynamics) for a US-Navy contract in 2,000.
+            <br><br>
+            It was designed for guided missile destroyer software.<br><br>
+            The database started as a TCL extension (a programming language).
+          </p>
+        </section>
+        <section>
+          <p>
+            The Syntax based on PostgreSQL 6.0, using B-Tree and transitions.<br>
+            It support most of SQL92 standard.
+          </p>
+        </section>
+        <section>
+          <h3>Quirks and interesting SQLite facts</h3>
+        </section>
+        <section>
+          <ul>
+            <li>Version 3 is the current version.</li>
+            <li class="fragment">It support Unicode functionality.</li>
+            <li class="fragment">It's dynamically typed structure, type defined by content, not by field type.</li>
+            <li class="fragment">Weak typed - Field type is not enforced - string can be inside an int field.</li>
+            <li class="fragment">Reading can be made using more then a single application at the same time, in parallel.</li>
+            <li class="fragment">Writing can be made only by a single connection.</li>
+            <li class="fragment">There is a <a href="https://www.sqlite.org/wal.html">WAL</a> (Write-Ahead log) support.</li>
+            <li class="fragment">It has support for full text search.</li>
+            <li class="fragment">The file format can copied between 32 and 64 bit, and even big and little endian
+              without a problem.</li>
+            <li class="fragment">All of the design and structure for the database exists on SQLite web site.</li>
+          </ul>
+        </section>
+        <section>
+          <a href="https://www.sqlite.org/">SQLite web site:<br />
+          https://www.sqlite.org/</a>
+        </section>
+      </section>
+      <section>
+        <section>
+          <h2>Apache Derby</h2>
         </section>
         <section>
 
