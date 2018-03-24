@@ -18,25 +18,25 @@
 
     <!--[if lt IE 9]>
     <script src="reveal.js/lib/js/html5shiv.js"></meta>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="reveal">
-      <div class="slides">
-        <section>
-          <img src="img/dbms.jpg" alt="dbms" >
-          <p>Open Source (Relational) Database Management System<br> By Ido Kanner</p>
-        </section>
-        <section>
+      <![endif]-->
+    </head>
+    <body>
+      <div class="reveal">
+        <div class="slides">
+          <section>
+            <img src="img/dbms.jpg" alt="dbms" >
+            <p>Open Source (Relational) Database Management System<br> By Ido Kanner</p>
+          </section>
+          <section>
             <h1>About Me</h1>
             <p>(Open Source) Software developer in the IT industry</p>
-        </section>
-        <section>
-          <h2>Small Question</h2>
-          <p>What is the most popular RDBMS in the world?</p>
-          <p><small>Hint: It's open sourced RDBMS</small></p>
-        </section>
-        <section>
+          </section>
+          <section>
+            <h2>Small Question</h2>
+            <p>What is the most popular RDBMS in the world?</p>
+            <p><small>Hint: It's open sourced RDBMS</small></p>
+          </section>
+          <section>
             <section>
               <h2>A Short History of Relational Databases</h2>
               <blockquote>
@@ -347,12 +347,6 @@ int main() {
                 <td>✓ </td>
               </tr>
               <tr class="fragment">
-                <td>H(yper)SQLDB</td>
-                <td>✓ </td>
-                <td>✗</td>
-                <td>✓ </td>
-              </tr>
-              <tr class="fragment">
                 <td>MySQL/MariaDB</td>
                 <td>✓ </td>
                 <td>✗</td>
@@ -457,7 +451,7 @@ int main() {
         </section>
         <section>
           <a href="https://www.sqlite.org/">SQLite web site:<br />
-          https://www.sqlite.org/</a>
+            https://www.sqlite.org/</a>
         </section>
       </section>
       <section>
@@ -493,90 +487,99 @@ int main() {
             <li class="fragment">Based on <a href="https://wiki.apache.org/db-derby/SQLvsDerbyFeatures">SQL standards</a>.</li>
             <li class="fragment">Support JDBC driver connection.</li>
             <li class="fragment">Support Client/Server connection.</li>
+            <li class="fragment">Lacks of Multi Version Concurrency (important for Client/Server ACID).</li>
             <li class="fragment">Sub project for <a href="https://db.apache.org/">Apache DB</a>.</li>
           </ul>
         </section>
         <section>
           <a href="https://db.apache.org/derby/">Derby web site:<br />
-          https://db.apache.org/derby/</a>
+            https://db.apache.org/derby/</a>
+        </section>
+      </section>
+      <section >
+        <section>
+          <h2>H2 Database</h2>
+        </section>
+        <section>
+          <p>On 2004 Thomas Mueller started working on the database.</p>
         </section>
       </section>
     </div>
   </div>
 
-  <script src="reveal.js/lib/js/head.min.js"></script>
-  <script src="reveal.js/js/reveal.js"></script>
-  <script>
-    // Full list of configuration options available here:
-    // https://github.com/hakimel/reveal.js#configuration
-    Reveal.initialize({
-      // Display controls in the bottom right corner
-      controls: true,
-        // Display a presentation progress bar
-        progress: true,
-        // Push each slide change to the browser history
-        history: true,
-        // Enable keyboard shortcuts for navigation
-        keyboard: true,
-        // Enable touch events for navigation
-        touch: true,
-        // Enable the slide overview mode
-        overview: true,
-        // Vertical centering of slides
-        center: true,
-        // Loop the presentation
-        loop: false,
-        // Change the presentation direction to be RTL
-        rtl: false,
-        // Number of milliseconds between automatically proceeding to the
-        // next slide, disabled when set to 0, this value can be overwritten
-        // by using a data-autoslide attribute on your slides
-        autoSlide: 0,
-        // Enable slide navigation via mouse wheel
-        mouseWheel: false,
-        // Transition style
-        transition: 'zoom', //  none/fade/slide/convex/concave/zoom
-        // Transition speed
-        transitionSpeed: 'default', // default/fast/slow
-        // Transition style for full page backgrounds
-        backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
+    <script src="reveal.js/lib/js/head.min.js"></script>
+    <script src="reveal.js/js/reveal.js"></script>
+    <script>
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+          // Display a presentation progress bar
+          progress: true,
+          // Push each slide change to the browser history
+          history: true,
+          // Enable keyboard shortcuts for navigation
+          keyboard: true,
+          // Enable touch events for navigation
+          touch: true,
+          // Enable the slide overview mode
+          overview: true,
+          // Vertical centering of slides
+          center: true,
+          // Loop the presentation
+          loop: false,
+          // Change the presentation direction to be RTL
+          rtl: false,
+          // Number of milliseconds between automatically proceeding to the
+          // next slide, disabled when set to 0, this value can be overwritten
+          // by using a data-autoslide attribute on your slides
+          autoSlide: 0,
+          // Enable slide navigation via mouse wheel
+          mouseWheel: false,
+          // Transition style
+          transition: 'zoom', //  none/fade/slide/convex/concave/zoom
+          // Transition speed
+          transitionSpeed: 'default', // default/fast/slow
+          // Transition style for full page backgrounds
+          backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
 
-        width: 1024,
-        height: 768,
-        margin: 0.1,
-        minScale: 0.2,
-        maxScale: 1.5,
-        viewDistance: 3,
+          width: 1024,
+          height: 768,
+          margin: 0.1,
+          minScale: 0.2,
+          maxScale: 1.5,
+          viewDistance: 3,
 
-        // Randomizes the order of slides each time the presentation loads
-        shuffle: false,
-        dependencies: [
-          // Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
-          { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          // Randomizes the order of slides each time the presentation loads
+          shuffle: false,
+          dependencies: [
+            // Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
+            { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
 
-          // Interpret Markdown in <section> elements
-          { src: 'reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: 'reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            // Interpret Markdown in <section> elements
+            { src: 'reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            { src: 'reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 
-          // Syntax highlight for <code> elements
-          { src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+            // Syntax highlight for <code> elements
+            { src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
 
-          // Zoom in and out with Alt+click
-          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
+            // Zoom in and out with Alt+click
+            { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
 
-          // Speaker notes
-          { src: 'reveal.js/plugin/notes/notes.js', async: true },
+            // Speaker notes
+            { src: 'reveal.js/plugin/notes/notes.js', async: true },
 
-          // MathJax
-          { src: 'reveal.js/plugin/math/math.js', async: true },
+            // MathJax
+            { src: 'reveal.js/plugin/math/math.js', async: true },
 
-          // Charts
-          { src: 'reveal.js/plugin2/chart/Chart.min.js', async: true },
-          { src: 'reveal.js/plugin2/chart/csv2chart.js', async: true },
-        ],
+            // Charts
+            { src: 'reveal.js/plugin2/chart/Chart.min.js', async: true },
+            { src: 'reveal.js/plugin2/chart/csv2chart.js', async: true },
+          ],
 
-    });
+      });
 
-  </script>
-</body>
+    </script>
+  </body>
 </html>
