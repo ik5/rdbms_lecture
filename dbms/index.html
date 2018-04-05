@@ -575,12 +575,100 @@ int main() {
         </section>
         <section>
           <p>
-            Firebird 3.0 (the current engine) was released on 19 April 2016, providing better security features, better
+            Firebird 3.0 (the current engine) released on 19 April 2016, providing better security features, better
             performance and better SMP support.
           </p>
         </section>
         <section>
           <h3>Quirks and interesting Firebird SQL facts</h3>
+        </section>
+        <section>
+          <ul>
+            <li>Mature RDBMS archetecture - The original database started on 1981.</li>
+            <li class="fragment">Free to use and to change using <a
+                href="https://www.firebirdsql.org/pdfmanual/html/qsg25-firebird-licenses.html">IPL (InterBase Public
+                License) and IDPL (Initial Developer's Public License)</a>.</li>
+            <li class="fragment">Cross Platform RDBMS (Linux, Windows, FreeBSD, Mac and HP-UX) + Native 32 and 64 bit
+              architecture.</li>
+            <li class="fragment">Multi-generation architecture - reading does not lock writing.</li>
+            <li class="fragment">Full ACID support.</li>
+            <li class="fragment">"Read-Only" RDBMS support.</li>
+            <li class="fragment">Supported as Embedded and Server.</li>
+          </ul>
+        </section>
+        <section>
+          <ul>
+            <li>
+              Rich and powerful Query language support:
+              <ul>
+                <li class="fragment">ANSI SQL support.</li>
+                <li class="fragment">Support for <a
+                    href="https://en.wikipedia.org/wiki/Hierarchical_and_recursive_queries_in_SQL#Common_table_expression">CTE</a></li>
+                <li class="fragment">Strong Transaction management system</li>
+                <li class="fragment">Strong Procedural SQL support.</li>
+                <li class="fragment">Cross-database queries</li>
+                <li class="fragment">Triggers and Events</li>
+                <li class="fragment">Domains</li>
+                <li class="fragment">Views</li>
+                <li class="fragment">User Defined Functions</li>
+                <li class="fragment">Full cursor support</li>
+                <li class="fragment">Clustered Indexes</li>
+                <li class="fragment">Computed Fields</li>
+                <li class="fragment">Sequence/Generator</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <ul>
+            <li>Logging and Security features:
+              <ul>
+                <li class="fragment">Real-time monitoring</li>
+                <li class="fragment">Audit trails for events, partial and full logging</li>
+                <li class="fragment">Support sending logging to remote server</li>
+                <li class="fragment">SQL Debug</li>
+                <li class="fragment">Support for Windows Trusted Authentication - Active Directory and SSO</li>
+                <li class="fragment">User Roles, grants, access rights</li>
+                <li class="fragment">Connection aliases - instead of addresses</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <ul>
+            <li>Small footprint (between 4Mb to 33Mb depends on installation)</li>
+            <li class="fragment">Backup and restore</li>
+            <li class="fragment">Thread-safe client libraries</li>
+            <li class="fragment">Supports up to 20 Tera bytes of data</li>
+          </ul>
+        </section>
+        <section>
+          <ul>
+            <li>Choice of architectures to fit all needs (without changing your application):
+              <ul>
+                <li class="fragment">Embedded - A dll/so file.</li>
+                <li class="fragment">SuperServer - single daemon/server for all client connections, multi threaded with <strong>shared</strong> cache</li>
+                <li class="fragment">SuperClassic - single daemon/server for all client connections, multi threaded with <strong>separate</strong> caches</li>
+								<li class="fragment">Classic - uses inetd to run one copy of the server per client connection, recommended for SMP systems but might have event-notification issues if access is via a firewall</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <ul>
+            <li>And some less known stuff:
+              <ul>
+                <li class="fragment">Not distributed</li>
+                <li class="fragment">Stored locally</li>
+                <li class="fragment">Less common and less known</li>
+                <li class="fragment">Used as embedded db for LibreOffice's Base program (Access like)</li>
+                <li class="fragment"></li>
+                <li class="fragment"></li>
+                <li class="fragment"></li>
+                <li class="fragment"></li>
+              </ul>
+            </li>
+          </ul>
         </section>
       </section>
     </div>
