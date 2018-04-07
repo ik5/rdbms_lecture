@@ -722,6 +722,88 @@ int main() {
         <section>
           <h3>MySQL quircks and interesting facts</h3>
         </section>
+        <section>
+          <ul>
+            <li>Dual license - GPL (General Public License) and Commercial EULA.</li>
+            <li class="fragment">Open source and Enterprise versions</li>
+            <li class="fragment">A broad subset of ANSI SQL 99</li>
+            <li class="fragment">Written in C and C++</li>
+            <li class="fragment">Uses multi-layered server design with independent modules. </li>
+            <li class="fragment">Designed to be fully multi-threaded using kernel threads, to easily use multiple CPUs if they are available.</li>
+            <li class="fragment">Contains multiple types of storage engines.</li>
+            <li class="fragment">Provides transactional and nontransactional storage engines.</li>
+          </ul>
+        </section>
+        <section>
+          <ul>
+            <li>Designed to make it relatively easy to add other storage engines. This is useful if you want to provide an SQL interface for an in-house database.</li>
+            <li class="fragment">Uses fast B-tree disk tables (MyISAM) with index compression, but lack of transactions. </li>
+            <li class="fragment">Uses a very fast thread-based memory allocation system.</li>
+            <li class="fragment">Executes very fast joins using an optimized nested-loop join.</li>
+            <li class="fragment">Implements in-memory hash tables, which are used as temporary tables.</li>
+            <li class="fragment">Implements SQL functions using a highly optimized class library that should be as fast as possible. Usually there is no memory allocation at all after query initialization</li>
+          </ul>
+        </section>
+        <section>
+          <ul>
+            <li>Provides the server as a separate program for use in a client/server networked environment and as
+              embedded/library environment.</li>
+            <li class="fragment">Support Auto increment for numeric fields.</li>
+            <li class="fragment"><strong>Does not</strong> support Sequences/Generators</li>
+            <li class="fragment">Updatable views</li>
+            <li class="fragment">Online DDL when using the InnoDB Storage Engine.</li>
+            <li class="fragment">Transactions with savepoints when using the default InnoDB Storage Engine. The NDB Cluster Storage Engine also supports transactions.</li>
+            <li class="fragment">ACID compliance when using InnoDB and NDB Cluster Storage Engines</li>
+            <li class="fragment">Nested Select</li>
+            <li class="fragment">SSL support</li>
+            <li class="fragment">Query caching</li>
+          </ul>
+        </section>
+        <section>
+          <ul>
+            <li>Build-in replication engine</li>
+            <li class="fragment">Full-text indexing and searching</li>
+            <li class="fragment">Unicode support</li>
+            <li class="fragment">Partitioned tables with pruning of partitions in optimizer</li>
+            <li class="fragment">Shared-nothing clustering through MySQL Cluster</li>
+            <li class="fragment">Commit grouping, gathering multiple transactions from multiple connections together to increase the number of commits per second.</li>
+            <li class="fragment">Amazing documentation</li>
+            <li class="fragment">Native JSON support (since v8.0)</li>
+          </ul>
+        </section>
+        <section>
+          <ul>
+            <li>Security:
+              <ul>
+                <li class="fragment">ACL host-based verification.</li>
+                <li class="fragment">Password security by encryption of all password traffic when you connect to a server.</li>
+                <li class="fragment">MySQL Server supports a keyring service that enables internal server components and plugins to securely store sensitive information for later retrieval.</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h3>MariaDB quircks and interesting facts</h3>
+        </section>
+        <section>
+          <ul>
+            <li>Dual License - GPL and LGPL (Lesser General Public License)</li>
+            <li class="fragment">Contains most features of MySQL.</li>
+            <li class="fragment">Have support for Windows functions.</li>
+            <li class="fragment">Have Support for JSON field type (thanks to PostgreSQL developers).</li>
+            <li class="fragment">Additional Storage engines that arrives by default.</li>
+            <li class="fragment">Compatible with MySQL 5 series.</li>
+            <li class="fragment">Support of external authentication systems.</li>
+          </ul>
+        </section>
+        <section>
+          <p>
+            <a href="https://www.mysql.com/">MySQL website:<br> https://www.mysql.com/</a>
+          </p>
+          <p>
+            <a href="https://mariadb.org">MariaDB website:<br>https://mariadb.org</a>
+          </p>
+        </section>
       </section>
     </div>
   </div>
