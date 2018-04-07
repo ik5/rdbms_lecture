@@ -55,11 +55,11 @@
               <p>The data itself was arriving from paper forms, and had a known structure to it.</p>
             </section>
             <section>
-              <p>I Know what you are thinking now</p>
+              <p>I know what you are thinking now</p>
               <p>You are looking for this:</p>
               <img src="img/enwiki.png" alt="mediawiki" class="fragment" />
             </section>
-            <section data-autoslide="3500">
+            <section>
               <p class="fragment">Now, I'll continue 😉</p>
             </section>
           </section>
@@ -166,8 +166,8 @@ int main() {
           <p>Type of management vary from one DBMS to another, but in general:</p>
           <ul>
             <li class="fragment">Control who can read and write</li>
-            <li class="fragment">Control data management</li>
-            <li class="fragment">Have indexing support (for example BTree)</li>
+            <li class="fragment">Control what is data management</li>
+            <li class="fragment">Have indexing support (for example B-Tree and R-Tree)</li>
           </ul>
         </section>
         <section>
@@ -384,15 +384,6 @@ int main() {
             Even your web browser uses it internally.<br>
             <br><a href="https://www.sqlite.org/famous.html">Well-Known Users of SQLite</a>
           </p>
-        </section>
-        <section>
-          <p>
-            <img src="img/Keye_Luke_Master_Po_Kung_Fu.JPG" alt="Keye Luke Master" ><br>
-            Good, yes, but what is SQLite?<br>
-          </p>
-        </section>
-        <section>
-          <p>Glad you've asked 😜</p>
         </section>
         <section>
           <p>
@@ -671,6 +662,67 @@ int main() {
             https://firebirdsql.org/ </a>
         </section>
       </section>
+      <section>
+        <section>
+          <h2>MySQL / MariaDB</h2>
+        </section>
+        <section>
+          <p>
+            Usually we read it as MySQL/MariaDB, but let me start with history to explain the database, and why.<br><br>
+            Using Wikipedia for that.
+          </p>
+        </section>
+        <section>
+          <p> In 1994 MySQL was created by a Swedish company, MySQL AB, founded by David Axmark, Allan Larsson and Michael Widenius.</p>
+        </section>
+        <section>
+          <p>
+            The first version of MySQL appeared on 23 May 1995.
+          </p>
+        </section>
+        <section>
+          <p>
+            It was initially created for personal usage from mSQL based on the low-level language ISAM, which the
+            creators considered too slow and inflexible.
+          </p>
+        </section>
+        <section>
+          <p>
+            MySQL AB created a new SQL interface, while keeping the same API as mSQL.
+          </p>
+        </section>
+        <section>
+          <h3>
+            MariaDB
+          </h3>
+        </section>
+        <section>
+          <p>
+            On 2008 Sun Microsystems aquiered MySQL AB.
+          </p>
+        </section>
+        <section>
+          <p>
+            On 2010 Oracle acquired Sun Microsystems.
+          </p>
+        </section>
+        <section>
+          <p>
+            The day that Oracle announced about the purchase of Sun Microsystems, Micael Widenius forked MySQL and
+            launched MariaDB, and took most MySQL developers with him.
+          </p>
+        </section>
+        <section>
+          <p>
+            Today, Most Linux distro and so does open source Unixes (BSD) replaced MySQL with MariaDB!<br>
+            <br>
+            The reason is more complicated then you think, and will not be addressed in this lecture.
+          </p>
+        </section>
+        <section>
+          <h3>MySQL quircks and interesting facts</h3>
+        </section>
+      </section>
     </div>
   </div>
 
@@ -682,71 +734,53 @@ int main() {
       Reveal.initialize({
         // Display controls in the bottom right corner
         controls: true,
-          // Display a presentation progress bar
-          progress: true,
-          // Push each slide change to the browser history
-          history: true,
-          // Enable keyboard shortcuts for navigation
-          keyboard: true,
-          // Enable touch events for navigation
-          touch: true,
-          // Enable the slide overview mode
-          overview: true,
-          // Vertical centering of slides
-          center: true,
-          // Loop the presentation
-          loop: false,
-          // Change the presentation direction to be RTL
-          rtl: false,
-          // Number of milliseconds between automatically proceeding to the
-          // next slide, disabled when set to 0, this value can be overwritten
-          // by using a data-autoslide attribute on your slides
-          autoSlide: 0,
-          // Enable slide navigation via mouse wheel
-          mouseWheel: false,
-          // Transition style
-          transition: 'zoom', //  none/fade/slide/convex/concave/zoom
-          // Transition speed
-          transitionSpeed: 'default', // default/fast/slow
-          // Transition style for full page backgrounds
-          backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
-
-          width: 1024,
-          height: 768,
-          margin: 0.1,
-          minScale: 0.2,
-          maxScale: 1.5,
-          viewDistance: 3,
-
-          // Randomizes the order of slides each time the presentation loads
-          shuffle: false,
-          dependencies: [
-            // Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
-            { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-
-            // Interpret Markdown in <section> elements
-            { src: 'reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-            { src: 'reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-
-            // Syntax highlight for <code> elements
-            { src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-
-            // Zoom in and out with Alt+click
-            { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
-
-            // Speaker notes
-            { src: 'reveal.js/plugin/notes/notes.js', async: true },
-
-            // MathJax
-            { src: 'reveal.js/plugin/math/math.js', async: true },
-
-            // Charts
-            { src: 'reveal.js/plugin2/chart/Chart.min.js', async: true },
-            { src: 'reveal.js/plugin2/chart/csv2chart.js', async: true },
-          ],
-
-      });
-
+        // Display a presentation progress bar
+        progress: true,
+        // Push each slide change to the browser history
+        history: true,
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+        // Enable touch events for navigation
+        touch: true,
+        // Enable the slide overview mode
+        overview: true,
+        // Vertical centering of slides
+        center: true,
+        // Loop the presentation
+        loop: false,
+        // Change the presentation direction to be RTL
+        rtl: false,
+        /* Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+         by using a data-autoslide attribute on your slides */
+        autoSlide: 0,
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+        // Transition style
+        transition: 'zoom', //  none/fade/slide/convex/concave/zoom
+        // Transition speed
+        transitionSpeed: 'default', // default/fast/slow
+        // Transition style for full page backgrounds
+        backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
+        // Display the page number of the current slide
+        slideNumber: true,
+        width: 1024,
+        height: 768,
+        margin: 0.1,
+        minScale: 0.2,
+        maxScale: 1.5,
+        viewDistance: 5,
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+        dependencies: [
+          // Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
+          { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          // Syntax highlight for <code> elements
+          { src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          // Zoom in and out with Alt+click
+          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
+        ],
+       });
     </script>
   </body>
 </html>
