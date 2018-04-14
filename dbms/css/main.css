@@ -21,3 +21,7 @@ td {
 td:first-child {
   text-align: left !important;
 }
+
+body {
+  background: bottom left url('../img/by-sa.svg') no-repeat;
+}
